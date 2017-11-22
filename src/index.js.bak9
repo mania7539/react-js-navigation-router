@@ -37,7 +37,7 @@ class App extends Component {
 
 	
 	render() {
-		var ActiveScreen;
+		var ActiveScreen
 			
 		if (this.state.screenIndex === 1) {
 			ActiveScreen = <Screen1 />
@@ -61,7 +61,7 @@ class App extends Component {
 						{
 							// pass eventEmitter to every page
 							React.cloneElement(this.props.children, {eventEmitter: this.eventEmitter})
-						}
+						};
 					</div>
 				</div>
 			</div>

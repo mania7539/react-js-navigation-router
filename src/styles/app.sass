@@ -1,0 +1,46 @@
+body
+  margin: 0
+  padding: 10px
+  font-family: sans-serif
+
+.app-header 
+  height: 60px
+  background-color: black
+  width: 100%
+  
+.app-wrapper 
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: stretch
+  min-height: 1000px
+  height: 100%
+  
+  .app-nav 
+    width: 100px
+    background-color: blue
+    display: flux
+    flex-direction: column
+    justify-content: flex-start
+    align-items: stretch
+    
+    .nav-item
+      height: 60px
+      background-color: coral
+      cursor: pointer
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      
+      &:hover
+        background-color: yellow
+      
+      &.active-nav
+        background-color: red
+        
+    
+  .main-content
+    flex: 1
+    background-color: gray
+  
